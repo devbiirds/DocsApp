@@ -1,8 +1,9 @@
+<#ftl encoding='UTF-8'>
 <#import "parts/common.ftl" as c>
 <#import "parts/loginparts.ftl" as l>
 <@c.page>
     <div>
-        <form method="post">
+        <form method="post" accept-charset="UTF-8">
             <input type="text" name="title" placeholder="Введите название документа :" />
             <input type="text" name="description" placeholder="Описание документа: ">
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
@@ -10,7 +11,7 @@
         </form>
     </div>
     <div>Список документов</div>
-    <form method="get" action="/main">
+    <form method="get" action="/main" accept-charset="UTF-8">
         <input type="text" name="filter" value="${filter}">
         <button type="submit">Найти</button>
     </form>

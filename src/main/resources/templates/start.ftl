@@ -1,3 +1,4 @@
+<#ftl encoding='UTF-8'>
 <#import "parts/common.ftl" as c>
 
 <@c.page>

@@ -1,3 +1,4 @@
+<#ftl encoding='UTF-8'>
 <#import "parts/common.ftl" as c>
 <#import "parts/loginparts.ftl" as l>
 
