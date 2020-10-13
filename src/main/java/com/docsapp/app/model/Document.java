@@ -14,6 +14,14 @@ public class Document {
     private String title;
     private String description;
 
+    public Document() {
+    }
+
+    public Document(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     public Integer getId() {
         return id;
     }
