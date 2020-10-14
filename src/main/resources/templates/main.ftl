@@ -25,11 +25,9 @@
             <b>${document.id}</b>
             <span>${document.title}</span>
             <i>${document.description}</i>
-            <div>
                 <#if document.filename??>
-                    <a src="/docs/${document.filename}">
+                    <a href="/docs/${document.filename}" download>Скачать файл</a>
                 </#if>
-            </div>
         </div>
     <#else>
         No documents
