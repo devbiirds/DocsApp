@@ -1,5 +1,6 @@
 package com.docsapp.app.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.AbstractHttpMessageConverter;
 import org.springframework.http.converter.FormHttpMessageConverter;
@@ -13,7 +14,8 @@ import java.util.List;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
-
+    @Value("${upload.path}")
+    private String uploadPath;
 
 
 
@@ -21,5 +23,5 @@ public class MvcConfig implements WebMvcConfigurer {
 
         registry.addViewController("/login").setViewName("login");
     }
-  
+
 }

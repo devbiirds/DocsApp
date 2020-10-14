@@ -13,7 +13,7 @@ public class Document {
 
     private String title;
     private String description;
-
+    private String filename;
     public Document() {
     }
 
@@ -46,6 +46,11 @@ public class Document {
         this.description = description;
     }
 
-    //для скачивания по ссылке
-    //private String url;
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
 }
