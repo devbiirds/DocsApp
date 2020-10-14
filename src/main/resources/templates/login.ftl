@@ -1,9 +1,6 @@
-<#ftl encoding='UTF-8'>
 <#import "parts/common.ftl" as c>
 <#import "parts/loginparts.ftl" as l>
 
 <@c.page>
-    Login page
-    <@l.login "/login" />
-    <a href="/registration">Add new user</a>
+    <@l.login "/login" false/>
 </@c.page>

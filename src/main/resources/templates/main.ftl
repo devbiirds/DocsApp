@@ -1,11 +1,9 @@
 <#ftl >
 <#import "parts/common.ftl" as c>
 <#import "parts/loginparts.ftl" as l>
+<#include "parts/security.ftl">
 <@c.page>
-    <div>
-        <@l.logout />
-        <span><a href="/user">User list</a></span>
-    </div>
+    <#if isAdmin>
     <div>
         <form method="post" enctype="multipart/form-data">
             <input type="text" name="title" placeholder="Введите название документа :" />
@@ -15,9 +13,10 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
+    </#if>
     <div>Список документов</div>
     <form method="get" action="/main" >
-        <input type="text" name="filter" value="{$filter?ifExists}" >
+        <input type="text" name="filter" value="${filter?ifExists}" >
         <button type="submit">Найти</button>
     </form>
     <#list documents as document>
