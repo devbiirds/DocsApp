@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface DocumentRepository extends CrudRepository<Document, Long> {
     List<Document> findByTitle(String title);
+
+    Document findById(Integer documentId);
 }

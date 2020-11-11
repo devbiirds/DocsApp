@@ -1,7 +1,10 @@
 package com.docsapp.app.controller;
 
 import com.docsapp.app.Repository.DocumentRepository;
+import com.docsapp.app.Repository.MessageRepository;
 import com.docsapp.app.model.Document;
+import com.docsapp.app.model.Message;
+import com.docsapp.app.model.Role;
 import com.docsapp.app.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,6 +12,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,8 +20,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.print.Doc;
 import java.io.File;
 import java.io.IOException;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Controller
 public class MainController {
@@ -47,6 +51,10 @@ public class MainController {
 
         return "main";
     }
+
+
+
+
 
     @PostMapping("/main")
     public String add(
@@ -79,5 +87,7 @@ public class MainController {
 
         return "main";
     }
+
+
 
 }

@@ -15,13 +15,13 @@ import java.util.List;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
-    @Value("${upload.path}")
-    private String uploadPath;
+    @Value("${download.path}")
+    private String downloadPath;
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/docs/**")
-                .addResourceLocations("file://" + uploadPath + "/");
+                .addResourceLocations("file://" + downloadPath + "/");
     }
 
     public void addViewControllers(ViewControllerRegistry registry) {

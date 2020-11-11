@@ -5,30 +5,63 @@
 <@c.page>
     <#if isAdmin>
     <div>
-        <form method="post" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="Введите название документа :" />
-            <input type="text" name="description" placeholder="Описание документа: ">
-            <input type="file" name="file">
-            <input type="hidden" name="_csrf" value="${_csrf.token}" />
-            <button type="submit">Добавить</button>
-        </form>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Add new Message
+        </a>
+        <div class="collapse" id="collapseExample">
+            <div class="form-group mt-3">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Введите название документа" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="description" placeholder="Введите описание документа">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-file">
+                            <input type="file" name="file" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     </#if>
     <div>Список документов</div>
-    <form method="get" action="/main" >
-        <input type="text" name="filter" value="${filter?ifExists}" >
-        <button type="submit">Найти</button>
-    </form>
-    <#list documents as document>
-        <div>
-            <b>${document.id}</b>
-            <span>${document.title}</span>
-            <i>${document.description}</i>
-                <#if document.filename??>
-                    <a href="/docs/${document.filename}" download>Скачать файл</a>
-                </#if>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <form method="get" action="/main" class="form-inline">
+                <input type="text" name="filter" class="form-control" value="${filter?ifExists}" placeholder="Search by tag">
+                <button type="submit" class="btn btn-primary ml-2">Search</button>
+            </form>
         </div>
-    <#else>
-        No documents
-    </#list>
+    </div>
+
+        <div class="card-columns">
+            <#list documents as document>
+                <div class="card my-3">
+                    <#if document.filename??>
+                        <a href="/docs/${document.filename}" download>Скачать файл</a>
+                    </#if>
+                    <div class="m-2">
+                        <span>${document.title}</span>
+
+                    </div>
+                    <div class="m-2">
+                        <p>${document.description}</p>
+                    </div>
+                    <div class="m-2">
+                        <a href="/comments/${document.id}">Комментарии</a>
+                    </div>
+
+                </div>
+            <#else>
+                No Documents
+            </#list>
+        </div>
 </@c.page>
