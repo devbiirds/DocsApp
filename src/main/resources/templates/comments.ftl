@@ -14,6 +14,6 @@
                 <span>${message.getText()}</span>
                 <p>${message.getAuthorName()}</p>
     <#else>
-        No Documents
+        No Comments
     </#list>
 </@c.page>

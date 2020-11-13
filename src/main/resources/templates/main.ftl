@@ -6,7 +6,7 @@
     <#if isAdmin>
     <div>
         <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Add new Message
+            Add new Document
         </a>
         <div class="collapse" id="collapseExample">
             <div class="form-group mt-3">

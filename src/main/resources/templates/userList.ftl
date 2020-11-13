@@ -3,7 +3,7 @@
 
 <@c.page>
  List of users
- <table>
+ <table class="table table-striped">
   <thead>
   <tr>
    <th>Name</th>
