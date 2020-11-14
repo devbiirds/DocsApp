@@ -45,18 +45,19 @@
         <div class="card-columns">
             <#list documents as document>
                 <div class="card my-3">
+
                     <#if document.filename??>
-                        <a href="/docs/${document.filename}" download>Скачать файл</a>
+                        <a class="btn btn-primary stretched-link" href="/docs/${document.filename}" download>Скачать файл</a>
                     </#if>
-                    <div class="m-2">
-                        <span>${document.title}</span>
+                    <div class="m-2"  >
+                        <h2> ${document.title}</h2>
 
                     </div>
                     <div class="m-2">
-                        <p>${document.description}</p>
+                        <p style="font-weight: lighter"> ${document.description}</p>
                     </div>
                     <div class="m-2">
-                        <a href="/comments/${document.id}">Комментарии</a>
+                        <a  href="/comments/${document.id}">Комментарии</a>
                     </div>
 
                 </div>

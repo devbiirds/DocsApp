@@ -10,6 +10,16 @@ public class Message {
 
     private String text;
 
+    private Integer raiting;
+
+    public Integer getRaiting() {
+        return raiting;
+    }
+
+    public void setRaiting(Integer raiting) {
+        this.raiting = raiting;
+    }
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
@@ -23,10 +33,11 @@ public class Message {
     public Message() {
     }
 
-    public Message(String text, User user, Document document) {
+    public Message(String text, User user,Integer raiting, Document document) {
         this.author = user;
         this.text = text;
         this.document = document;
+        this.raiting = raiting;
     }
 
     public String getAuthorName() {

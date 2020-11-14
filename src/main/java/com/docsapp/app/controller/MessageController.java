@@ -27,11 +27,12 @@ public class MessageController {
     @PostMapping
     public ModelAndView addComment(
             @AuthenticationPrincipal User user,
-            @RequestParam String text , Map<String, Object> model,
+            @RequestParam String text,
+            @RequestParam Integer number , Map<String, Object> model,
             @RequestParam("documentId") Integer documentId
     ) {
         ModelAndView modelAndView = new ModelAndView("redirect:/comments/" + documentId);
-        Message message = new Message(text, user, documentRepository.findById(documentId));
+        Message message = new Message(text, user, number,documentRepository.findById(documentId));
 
         messageRepository.save(message);
 
