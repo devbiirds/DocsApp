@@ -10,6 +10,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
@@ -19,31 +20,31 @@ import java.util.concurrent.atomic.AtomicReference;
 public class MessageController {
     @Autowired
     private MessageRepository messageRepository;
+    @Autowired
     private DocumentRepository documentRepository;
 
+
     @PostMapping
-    public String addComment(
+    public ModelAndView addComment(
             @AuthenticationPrincipal User user,
             @RequestParam String text , Map<String, Object> model,
-            @RequestParam Integer documentId
+            @RequestParam("documentId") Integer documentId
     ) {
-        Document documentFind = new Document();
-        Iterable<Document> documents = documentRepository.findAll();
+        ModelAndView modelAndView = new ModelAndView("redirect:/comments/" + documentId);
+        Message message = new Message(text, user, documentRepository.findById(documentId));
 
-     //   Message message = new Message(text, user, doc);
+        messageRepository.save(message);
 
-        //messageRepository.save(message);
+       Iterable<Message> messages = messageRepository.findByDocumentId(documentId);
 
-       // Iterable<Message> messages = messageRepository.findByDocumentId(documentId);
+        model.put("messages", messages);
 
-        //model.put("messages", messages);
-
-        return "main";
+        return modelAndView;
     }
     @GetMapping("{documentId}")
     public String GetComments(@PathVariable Integer documentId, Model model) {
         Iterable<Message> messages = messageRepository.findByDocumentId(documentId);
-
+        model.addAttribute("message",new Message());
         model.addAttribute("messages", messages);
         model.addAttribute("documentId", documentId);
         return "comments";
