@@ -2,6 +2,7 @@ package com.docsapp.app.controller;
 
 import com.docsapp.app.Repository.DocumentRepository;
 import com.docsapp.app.Repository.MessageRepository;
+import com.docsapp.app.aspect.Loggable;
 import com.docsapp.app.model.Document;
 import com.docsapp.app.model.Message;
 import com.docsapp.app.model.User;
@@ -25,6 +26,7 @@ public class MessageController {
 
 
     @PostMapping
+    @Loggable
     public ModelAndView addComment(
             @AuthenticationPrincipal User user,
             @RequestParam String text,

@@ -1,6 +1,7 @@
 package com.docsapp.app.controller;
 
 import com.docsapp.app.Repository.UserRepository;
+import com.docsapp.app.aspect.Loggable;
 import com.docsapp.app.model.Role;
 import com.docsapp.app.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +23,13 @@ public class RegistrationController {
     private UserService userService;
 
     @GetMapping("/registration")
+    @Loggable
     public String registration() {
         return "registration";
     }
 
     @PostMapping("/registration")
+    @Loggable
     public String addUser(@Valid User user, BindingResult bindingResult, Model model) {
         if (user.getPassword() != null && !user.getPassword().equals(user.getPassword2())) {
             model.addAttribute("passwordError", "Passwords are different!");
@@ -48,6 +51,7 @@ public class RegistrationController {
         return "redirect:/login";
     }
     @GetMapping("/activate/{code}")
+    @Loggable
     public String activate(Model model, @PathVariable String code) {
         boolean isActivated = userService.activateUser(code);
 

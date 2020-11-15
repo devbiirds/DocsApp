@@ -2,6 +2,7 @@ package com.docsapp.app.controller;
 
 import com.docsapp.app.Repository.DocumentRepository;
 import com.docsapp.app.Repository.MessageRepository;
+import com.docsapp.app.aspect.Loggable;
 import com.docsapp.app.model.Document;
 import com.docsapp.app.model.Message;
 import com.docsapp.app.model.Role;
@@ -36,11 +37,13 @@ public class MainController {
     private String uploadPath;
 
     @GetMapping("/")
+    @Loggable
     public String greeting(Map<String, Object> model) {
         return "start";
     }
 
     @GetMapping("/main")
+    @Loggable
     public String main(@RequestParam(required = false, defaultValue = "") String filter, Model model) {
         Iterable<Document> documents = documentRepository.findAll();
 
@@ -61,6 +64,7 @@ public class MainController {
 
 
     @PostMapping("/main")
+    @Loggable
     public String add(
             @Valid Document document,
             BindingResult bindingResult,

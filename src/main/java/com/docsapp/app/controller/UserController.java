@@ -1,6 +1,7 @@
 package com.docsapp.app.controller;
 
 import com.docsapp.app.Repository.UserRepository;
+import com.docsapp.app.aspect.Loggable;
 import com.docsapp.app.model.Role;
 import com.docsapp.app.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,14 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping
+    @Loggable
     public String userList(Model model){
         model.addAttribute("users",userRepository.findAll());
         return "userList";
     }
 
     @GetMapping("{user}")
+    @Loggable
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
@@ -35,6 +38,7 @@ public class UserController {
         return "userEdit";
     }
     @PostMapping
+    @Loggable
     public String userSave(
             @RequestParam String username,
             @RequestParam Map<String, String> form,
