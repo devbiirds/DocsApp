@@ -1,17 +1,23 @@
 package com.docsapp.app.model;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+import javax.validation.constraints.NotBlank;
 @Entity
 public class Document {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @NotBlank(message = "Please, fill the message")
+    @Length(max = 2048, message =  "Message too long")
     private String title;
+    @NotBlank(message = "Please, fill the message")
+    @Length(max = 2048, message =  "Message too long")
     private String description;
     private String filename;
     public Document() {

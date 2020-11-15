@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.print.Doc;
+import javax.validation.Valid;
+import javax.xml.ws.Binding;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -58,12 +62,19 @@ public class MainController {
 
     @PostMapping("/main")
     public String add(
-            @RequestParam String title,
-            @RequestParam String description, Map<String, Object> model,
-               @RequestParam("file") MultipartFile file
+            @Valid Document document,
+            BindingResult bindingResult,
+            Model model,
+            @RequestParam("file") MultipartFile file
     ) throws IOException {
-        Document document = new Document(title, description);
 
+        if(bindingResult.hasErrors()){
+            Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+
+            model.mergeAttributes(errorsMap);
+            model.addAttribute("document", document);
+        }
+        else{
         if (file != null && !file.getOriginalFilename().isEmpty()) {
             File uploadDir = new File(uploadPath);
 
@@ -78,12 +89,13 @@ public class MainController {
 
             document.setFilename(resultFilename);
         }
-
+        model.addAttribute("document",null);
         documentRepository.save(document);
+        }
 
         Iterable<Document> documents = documentRepository.findAll();
 
-        model.put("documents", documents);
+        model.addAttribute("documents", documents);
 
         return "main";
     }

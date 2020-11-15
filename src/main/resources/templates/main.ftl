@@ -8,14 +8,28 @@
         <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             Add new Document
         </a>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse <#if document??>show</#if>" id="collapseExample">
             <div class="form-group mt-3">
                 <form method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="title" placeholder="Введите название документа" />
+                        <input type="text" class="form-control ${(titleError??)?string('is-invalid', '')}"
+                               value="<#if document??>${document.title}</#if>" name="title" placeholder="Введите название документа" />
+                        <#if titleError??>
+                            <div class="invalid-feedback">
+                                ${titleError}
+                            </div>
+                        </#if>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="description" placeholder="Введите описание документа">
+                        <input type="text" class="form-control ${(descriptionError??)?string('is-invalid', '')}" name="description"
+                               value="<#if document??>${document.description}</#if>"
+                               placeholder="Введите описание документа">
+
+                        <#if descriptionError??>
+                            <div class="invalid-feedback">
+                                ${descriptionError}
+                            </div>
+                        </#if>
                     </div>
                     <div class="form-group">
                         <div class="custom-file">
