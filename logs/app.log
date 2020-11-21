@@ -1,0 +1,179 @@
+2020-12-16 00:20:08,712 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 20196 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 00:20:08,715 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 00:20:08,716 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 00:20:13,276 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 5.175 seconds (JVM running for 6.608)
+2020-12-16 00:20:48,484 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 13708 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 00:20:48,487 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 00:20:48,488 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 00:20:53,324 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 5.413 seconds (JVM running for 7.693)
+2020-12-16 00:55:47,943 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 17540 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 00:55:47,947 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 00:55:47,948 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 00:55:55,585 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 8.635 seconds (JVM running for 11.56)
+2020-12-16 00:56:06,943 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Call method loadUserByUsername with args [Ljava.lang.Object;@74fa9c2
+2020-12-16 00:56:07,200 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Method loadUserByUsername returns com.docsapp.app.model.User@7ea84a36
+2020-12-16 00:56:14,225 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method addComment with args [Ljava.lang.Object;@21c84c04
+2020-12-16 00:56:14,264 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method addComment returns ModelAndView [view="redirect:/comments/24"; model=null]
+2020-12-16 00:58:08,135 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 2356 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 00:58:08,138 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 00:58:08,143 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 00:58:14,994 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 7.587 seconds (JVM running for 9.43)
+2020-12-16 00:58:18,790 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Call method loadUserByUsername with args [Ljava.lang.Object;@591b7e13
+2020-12-16 00:58:18,944 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Method loadUserByUsername returns com.docsapp.app.model.User@5e87ce09
+2020-12-16 00:58:18,986 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Call method greeting with args [Ljava.lang.Object;@53a030f8
+2020-12-16 00:58:18,988 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Method greeting returns start
+2020-12-16 00:58:20,170 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-5] Call method main with args [Ljava.lang.Object;@4f1eceaf
+2020-12-16 00:58:20,199 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-5] Method main returns main
+2020-12-16 00:58:38,605 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Call method greeting with args [Ljava.lang.Object;@671cc67
+2020-12-16 00:58:38,606 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Method greeting returns start
+2020-12-16 00:58:39,723 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method main with args [Ljava.lang.Object;@729bafc
+2020-12-16 00:58:39,729 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method main returns main
+2020-12-16 00:58:52,420 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-1] Call method loadUserByUsername with args [Ljava.lang.Object;@a9ff73c
+2020-12-16 00:58:52,430 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-1] Method loadUserByUsername returns com.docsapp.app.model.User@6603369a
+2020-12-16 00:58:52,467 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-2] Call method greeting with args [Ljava.lang.Object;@3bb5358f
+2020-12-16 00:58:52,467 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-2] Method greeting returns start
+2020-12-16 00:58:54,373 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Call method main with args [Ljava.lang.Object;@c784df7
+2020-12-16 00:58:54,379 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Method main returns main
+2020-12-16 00:58:59,910 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Call method userList with args [Ljava.lang.Object;@5c38aff9
+2020-12-16 00:58:59,919 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-4] Method userList returns userList
+2020-12-16 01:02:10,476 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Call method main with args [Ljava.lang.Object;@8b622d9
+2020-12-16 01:02:10,486 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Method main returns main
+2020-12-16 01:02:18,955 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method main with args [Ljava.lang.Object;@732f0d9e
+2020-12-16 01:02:18,964 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method main returns main
+2020-12-16 01:02:22,028 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-9] Call method main with args [Ljava.lang.Object;@4031fe15
+2020-12-16 01:02:22,033 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-9] Method main returns main
+2020-12-16 01:04:05,964 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-2] Call method userList with args [Ljava.lang.Object;@5c01178f
+2020-12-16 01:04:05,972 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-2] Method userList returns userList
+2020-12-16 01:11:12,893 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Call method registration with args [Ljava.lang.Object;@37faaf71
+2020-12-16 01:11:12,899 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Method registration returns registration
+2020-12-16 01:11:27,821 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method addUser with args [Ljava.lang.Object;@b816397
+2020-12-16 01:11:27,821 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method addUser with args [Ljava.lang.Object;@3276181f
+2020-12-16 01:11:27,883 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method send with args [Ljava.lang.Object;@6595de60
+2020-12-16 01:11:33,857 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method send returns null
+2020-12-16 01:11:33,857 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method addUser returns true
+2020-12-16 01:11:33,857 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method addUser returns redirect:/login
+2020-12-16 14:57:11,534 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 15012 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 14:57:11,537 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 14:57:11,538 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 14:57:20,318 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 9.58 seconds (JVM running for 15.452)
+2020-12-16 14:57:53,558 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-10] Call method loadUserByUsername with args [Ljava.lang.Object;@67a15c4e
+2020-12-16 14:57:53,798 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-10] Method loadUserByUsername returns com.docsapp.app.model.User@ae2f4c2
+2020-12-16 14:59:26,425 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 8932 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 14:59:26,429 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 14:59:26,431 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 14:59:37,232 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 12.102 seconds (JVM running for 14.692)
+2020-12-16 14:59:39,116 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Call method loadUserByUsername with args [Ljava.lang.Object;@193a9bb9
+2020-12-16 14:59:39,310 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-3] Method loadUserByUsername returns com.docsapp.app.model.User@24fc58a7
+2020-12-16 14:59:59,842 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Call method greeting with args [Ljava.lang.Object;@5cc02e34
+2020-12-16 14:59:59,846 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-7] Method greeting returns start
+2020-12-16 15:00:02,831 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-6] Call method greeting with args [Ljava.lang.Object;@37b7fc02
+2020-12-16 15:00:02,831 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-6] Method greeting returns start
+2020-12-16 15:00:12,800 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Call method loadUserByUsername with args [Ljava.lang.Object;@756a5149
+2020-12-16 15:00:12,805 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-8] Method loadUserByUsername returns com.docsapp.app.model.User@1515619c
+2020-12-16 15:00:12,844 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-9] Call method greeting with args [Ljava.lang.Object;@4de5953d
+2020-12-16 15:00:12,848 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-9] Method greeting returns start
+2020-12-16 15:22:28,629 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 1152 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 15:22:28,631 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 15:22:28,634 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 15:22:37,358 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 9.812 seconds (JVM running for 12.07)
+2020-12-16 15:24:21,763 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 800 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 15:24:21,768 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 15:24:21,769 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 15:24:29,864 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 9.036 seconds (JVM running for 11.366)
+2020-12-16 15:24:33,697 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/comments/24': {public java.lang.String com.docsapp.app.controller.MessageController.GetComments(java.lang.Integer,org.springframework.ui.Model), public org.springframework.http.ResponseEntity com.docsapp.app.controller.MessageRestController.getCommentByDocumentId(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/comments/24': {public java.lang.String com.docsapp.app.controller.MessageController.GetComments(java.lang.Integer,org.springframework.ui.Model), public org.springframework.http.ResponseEntity com.docsapp.app.controller.MessageRestController.getCommentByDocumentId(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:413)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:396)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-16 15:25:52,380 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 248 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 15:25:52,382 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 15:25:52,383 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 15:26:00,809 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 9.418 seconds (JVM running for 11.872)
+2020-12-16 15:27:45,702 INFO com.docsapp.app.DemoApplication [restartedMain] Starting DemoApplication on DESKTOP-0KUGJEC with PID 5412 (A:\JavaTasks\docsapp\target\classes started by Vadim in A:\JavaTasks\docsapp)
+2020-12-16 15:27:45,709 DEBUG com.docsapp.app.DemoApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-16 15:27:45,711 INFO com.docsapp.app.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-16 15:27:52,728 INFO com.docsapp.app.DemoApplication [restartedMain] Started DemoApplication in 7.723 seconds (JVM running for 10.246)
+2020-12-16 15:28:15,553 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-5] Call method loadUserByUsername with args [Ljava.lang.Object;@3407f456
+2020-12-16 15:28:15,604 DEBUG com.docsapp.app.aspect.MethodLogger [http-nio-8080-exec-5] Method loadUserByUsername returns com.docsapp.app.model.User@246c671b

@@ -1,81 +1,48 @@
 package com.docsapp.app.service;
 
-import com.docsapp.app.Repository.UserRepository;
 import com.docsapp.app.aspect.Loggable;
-import com.docsapp.app.model.Role;
-import com.docsapp.app.model.User;
+import com.docsapp.app.model.CommentEntity;
+import com.docsapp.app.model.UsersEntity;
+import com.docsapp.app.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-import com.docsapp.app.service.MailSender;
-import java.util.UUID;
 
-import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 @Service
-public class UserService implements UserDetailsService {
-    @Autowired
-    private UserRepository userRepository;
+public class UserService {
 
     @Autowired
-    private PasswordEncoder passwordEncoder;
-
+    private UserRepository repository;
     @Autowired
-    private MailSender mailSender;
-    @Override
-    @Loggable
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username);
+    private BCryptPasswordEncoder passwordEncoder;
 
-        if (user == null) {
-            throw new UsernameNotFoundException("User not found");
-        }
-
-        return user;
+@Loggable
+    public Optional<UsersEntity> findByLogin(String name) {
+        return Optional.of(repository.findByLogin(name).get());
     }
+
     @Loggable
-    public boolean addUser(User user) {
-        User userFromDb = userRepository.findByUsername(user.getUsername());
-
-        if (userFromDb != null) {
-            return false;
-        }
-
-        user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
-        user.setActivationCode(UUID.randomUUID().toString());
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
-
-        if (!StringUtils.isEmpty(user.getEmail())) {
-            String message = String.format(
-                    "Hello, %s! \n" +
-                            "Welcome to DocsApp. Please, visit next link: http://localhost:8080/activate/%s",
-                    user.getUsername(),
-                    user.getActivationCode()
-            );
-
-            mailSender.send(user.getEmail(), "Activation code", message);
-        }
-
-        return true;
+    public UsersEntity getById(int id) {
+        return repository.findById(id).get();
     }
+
     @Loggable
-    public boolean activateUser(String code) {
-        User user = userRepository.findByActivationCode(code);
+    public UsersEntity findByNameAndPassword(String name, String pass) {
+        return repository.findByLoginAndPassword(name, pass).get();
+    }
 
-        if (user == null) {
-            return false;
-        }
+    @Loggable
+    public List getAll() {
+        return (List) repository.findAll();
+    }
 
-        user.setActivationCode(null);
-
-        userRepository.save(user);
-
-        return true;
+    @Loggable
+    public void save(UsersEntity userModel) {
+        userModel.setRole(0);
+        userModel.setPassword(passwordEncoder.encode(userModel.getPassword()));
+        repository.save(userModel);
     }
 }

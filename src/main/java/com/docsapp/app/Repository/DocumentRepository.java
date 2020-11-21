@@ -10,4 +10,7 @@ public interface DocumentRepository extends CrudRepository<Document, Long> {
     List<Document> findByTitle(String title);
 
     Document findById(Integer documentId);
+    List<Document> getByAuthor(Id authorId);
+
+    List<Document> getByDescription(String description)
 }

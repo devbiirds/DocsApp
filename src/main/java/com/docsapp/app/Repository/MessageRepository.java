@@ -9,5 +9,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface MessageRepository extends CrudRepository<Message, Long> {
-    List<Message> findByDocumentId(Integer DocumentId);
+    List<Message> getAllCommentBydocumentId(Integer DocumentId);
+    Message findById(Integer messageId);
+    
 }
